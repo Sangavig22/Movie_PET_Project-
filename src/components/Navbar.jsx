@@ -36,7 +36,7 @@ const Navbar = () => {
           ) :(
             <UserButton>
               <UserButton.MenuItems>
-                <UserButton.Action label='My Bookings' labelIcon={<TicketPlus width={15}/>} />
+                <UserButton.Action label='My Bookings' labelIcon={<TicketPlus/>} />
               </UserButton.MenuItems>
             </UserButton>
           )
