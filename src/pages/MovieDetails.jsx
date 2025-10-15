@@ -6,7 +6,11 @@ import BlurCircle from '../components/BlurCircle'
 import { useParams, useNavigate } from 'react-router-dom';
 import MovieCard from '../components/MovieCard'
 import { dummyDateTimeData, dummyShowsData } from '../assets/assets'
-import timeFormat from '../lib/timeformat';
+import timeFormat from '../lib/timeformat'
+import Loading from '../components/Loading'
+
+
+
 
 const MovieDetails = () => {
 
