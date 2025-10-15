@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { dummyBookingData } from '../assets/assets'
-import { dateFormat } from '../lib/dateFormat'
+import { dateFormat } from '../lib/dateFormat.js'
 
 const MyBooking = () => {
   const currency=import.meta.env.VITE_CURRENCY 
