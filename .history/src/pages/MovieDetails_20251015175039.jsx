@@ -2,7 +2,7 @@ import { useDerivedAuth } from '@clerk/clerk-react/internal'
 import { PlayCircleIcon, StarIcon, Heart, ChevronLeftIcon, ChevronRightIcon } from 'lucide-react'
 import React, { useEffect, useState } from 'react'
 import DateSelect from '../components/DateSelect'
-import BlurCircle from '../components/BlurCircle'
+import BlurCircule from '../components/BlurCircule'
 import { useParams, useNavigate } from 'react-router-dom';
 import MovieCard from '../components/MovieCard'
 import { dummyDateTimeData, dummyShowsData } from '../assets/assets'

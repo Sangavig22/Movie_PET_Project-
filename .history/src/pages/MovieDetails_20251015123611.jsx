@@ -1,12 +1,12 @@
-import { useDerivedAuth } from '@clerk/clerk-react/internal'
+//import { useDerivedAuth } from '@clerk/clerk-react/internal'
 import { PlayCircleIcon, StarIcon, Heart, ChevronLeftIcon, ChevronRightIcon } from 'lucide-react'
 import React, { useEffect, useState } from 'react'
 import DateSelect from '../components/DateSelect'
-import BlurCircle from '../components/BlurCircle'
+///import BlurCircle from '../components/BlurCircle'
 import { useParams, useNavigate } from 'react-router-dom';
 import MovieCard from '../components/MovieCard'
 import { dummyDateTimeData, dummyShowsData } from '../assets/assets'
-import timeFormat from '../lib/timeformat';
+import { timeFormat } from '../lib/isoTimeFormat'
 
 const MovieDetails = () => {
 
