@@ -44,9 +44,7 @@ const ListBookings = () => {
                 <td className="p-2">{item.show.movie.title}</td>
                 <td className="p-2">{/* Show name or date here */}</td>
                 <td className="p-2">
-                  {Object.keys(item.show.bookedSeats)
-                    .map((seat) => item.show.bookedSeats[seat])
-                    .join(', ')}
+                  {Array.isArray(item.show.bookedSeats) ? item.show.bookedSeats.join(', ') : ''}
                 </td>
                 <td className="p-2">
                   {currency} {item.amount}
