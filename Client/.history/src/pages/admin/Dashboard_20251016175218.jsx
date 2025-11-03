@@ -1,0 +1,27 @@
+import { ChartLineIcon } from 'lucide-react';
+import React, { useState } from 'react'
+
+const Dashboard = () => {
+
+  const currency = import.meta.env.VITE_CURRENCY
+  const [dashboardData, setDashboardData] = useState({
+    totalBooking: 0,
+    totalRevenue: 0,
+    activeShows: [],
+    totalUser:0
+  });
+  const [loading, setLoading] = useState(true);
+
+  const dashboardCards = [
+    { title: "Total Bookings", value: dashboardData.totalBookings || "0", icon: ChartLineIcon }
+  ]
+  
+
+  return (
+    <div>
+      
+    </div>
+  )
+}
+
+export default Dashboard

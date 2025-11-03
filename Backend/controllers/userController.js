@@ -61,7 +61,7 @@ export const getFavourites=async(req,res)=>{
         //Getting movies from database
         const movies=await Movie.find({_id:{in:favourites}})
 
-        res.json({success:true,movies})
+        res.json
     
     } catch (error) {
          console.error(error.message);
