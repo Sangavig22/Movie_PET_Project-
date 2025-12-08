@@ -9,7 +9,7 @@ import showRouter from './routes/showRoutes.js';
 import userRouter from './routes/userRoutes.js';
 
 const app = express();
-const port = 3000;
+const port = 3000;  
 
 await connectDB();
 

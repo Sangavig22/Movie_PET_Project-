@@ -15,8 +15,8 @@ import Dashboard from './pages/admin/Dashboard'
 import AddShows from './pages/admin/AddShows'
 import ListShows from './pages/admin/ListShows'
 import ListBooking from './pages/admin/ListBooking'
-import { useAppContext } from './context/AppContext'
-import { SignIn, SignIn } from '@clerk/clerk-react'
+import { useAppContext } from './context/AppContext.jsx'
+import { SignIn } from '@clerk/clerk-react'
 
 const App = () => {
 
@@ -41,8 +41,8 @@ const{ user }=useAppContext()
           <SignIn fallbackRedirectUrl={"/admin"} />
         </div>
       )}>
-         //<Route index element={<Dashboard/>} />
-         Route path="add-shows" element={<AddShows/>} />
+         {/*<Route index element={<Dashboard/>} />*/}
+         <Route path="add-shows" element={<AddShows/>} />
          <Route path="list-shows" element={<ListShows/>} />
          <Route path="list-bookings" element={<ListBooking/>} />
       </Route>
